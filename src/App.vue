@@ -1,28 +1,36 @@
-<template>
+<template> <!--Template is where all our HTML lives and vue directives and where vue content wrappers go-->
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <skills />
   </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script> //Logic goes here
+import skills from './components/skills.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    skills
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+<style> /* CSS goes here */
+  body {
+    background-color: #EEEEEE;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  body, html {
+    margin: 0;
+    height: 100%;
+  }
+  #app {
+    width: 50%;
+  }
 </style>
