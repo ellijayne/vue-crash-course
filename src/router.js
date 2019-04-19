@@ -13,9 +13,11 @@ export default new Router({
             component: Skills
         },
         {
-            path: '/about/:person',
+            path: '/about',
             name: About,
             component: About
         }
     ]
 })
+
+// path for about before was '/about/:person' if you want to look at the url params part of tutorial 
